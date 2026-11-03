@@ -1,25 +1,23 @@
-console.log("Halo, saya Andi!");
+// 1. Pesan pertama ke Console
+console.log("Halo, saya Arya!");
 console.log("Ini latihan JavaScript pertamaku.");
 
 // 2. Data siswa
-const nama = "Andi Pratama";
+const nama = "Arya Wahyu Dwi Prasetyo";
 const kelas = "X PPLG 1";
 const kkm = 75;
 let nilaiTugas = 85;
 let nilaiUts = 78;
 let nilaiUas = 89;
 let kehadiran = 90;
-
 console.log(`Nama: ${nama}, kelas ${kelas}`);
-console.log(`Nilai tugas ${nilaiTugas}, UTS ${nilaiUts}, UAS $
-{nilaiUas}`);
+console.log(`Nilai tugas ${nilaiTugas}, UTS ${nilaiUts}, UAS ${nilaiUas}`);
 
 // 3. Fungsi
 const hitungRataRata = (tugas, uts, uas) => (tugas + uts + uas) / 3;
-
 function predikat(nilai) {
     if (nilai >= 90) {
-    return "A";
+        return "A";
     } else if (nilai >= 80) {
         return "B";
     } else if (nilai >= 70) {
@@ -30,9 +28,9 @@ function predikat(nilai) {
 }
 function rapor(namaSiswa, tugas, uts, uas) {
     const rata = hitungRataRata(tugas, uts, uas);
-    return `${namaSiswa}: rata-rata ${rata}, predikat $
-{predikat(rata)}`;
+    return `${namaSiswa}: rata-rata ${rata}, predikat ${predikat(rata)}`;
 }
+// 4. Hasil nilai Andi
 const rataRata = hitungRataRata(nilaiTugas, nilaiUts, nilaiUas);
 const lulus = rataRata >= kkm;
 const dapatSertifikat = lulus && kehadiran >= 80;
