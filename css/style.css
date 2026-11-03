@@ -4,6 +4,17 @@
    Tata letak: mobile first, titik ubah 768px (tablet) dan 1024px (laptop) */
 
 /* 1. Reset */
+:root {
+  --warna-utama: #1D3557;
+  --warna-judul: #1f1f1f;
+  --warna-aksen: #E63946;
+  --warna-tautan: #E63946;
+  --warna-latar: #F1FAEE;
+  --warna-teks: #1f1f1f;
+  --warna-kartu: #FFFFFF;
+  --warna-garis: #DDDDDD;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,12 +31,12 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: #1f1f1f;
-  background-color: #91b4ff;
+  background-color: #FFFFFF;
 }
 
 h1, h2, h3 {
   font-family: "Poppins", Arial, sans-serif;
-  color: #1f1f1f;
+  color: #000000;
   line-height: 1.2;
 }
 
@@ -38,7 +49,7 @@ p, ul, ol {
 }
 
 a {
-  color: #e03644;
+  color: #E63946;
 }
 
 /* 3. Wadah, header, dan menu */
@@ -50,12 +61,12 @@ a {
 
 header {
   background-color: #1D3557;
-  color: #FFFFFF;
+  color: #F1FAEE;
   padding: 1rem 0;
 }
 
 header h1 {
-  color: #FFFFFF;
+  color: #F1FAEE;
   font-size: 1.5rem;
 }
 
@@ -117,7 +128,7 @@ main {
 }
 
 .hero img {
-  border: 3px solid #fcfeff;
+  border: 3px solid #e63946;
   border-radius: 50%;
 }
 
@@ -129,15 +140,15 @@ main {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
-  background-color: #fcfeff;
+  background-color: #e63946;
   color: #1f1f1f;
   font-weight: 600;
   text-decoration: none;
-  border: 2px solid #1D3557
+  border: 2px solid #1f1f1f
 }
 
 .kartu {
-  background-color: #FFFFFF;
+  background-color: #FFFfff;
   padding: 1rem;
   margin-bottom: 1.5rem;
   border: 1px solid #DDDDDD;
@@ -198,6 +209,8 @@ input, select, textarea {
   border-radius: 6px;
   font-family: inherit;
   font-size: 1rem;
+  background-color: var(--warna-kartu);
+  color: var(--warna-teks);
 }
 
 button {
@@ -263,4 +276,49 @@ footer a {
   .hero h2 {
     font-size: 2.75rem;
   }
+}
+.tombol-tema {
+  padding: 0.5rem 0.9rem;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  font-size: 0.9rem;
+}
+body.gelap {
+  background-color: #121A24;
+  color: #000000;
+}
+.keterangan {
+  font-size: 0.875rem;
+}
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.tombol-filter {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--warna-garis);
+  background-color: var(--warna-kartu);
+  color: var(--warna-judul);
+}
+.label {
+  display: inline-block;
+  padding: 0.1rem 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 999px;
+  background-color: var(--warna-latar);
+  color: var(--warna-judul);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+body.gelap {
+  --warna-utama: #0B1526;
+  --warna-judul: #f1f1f1;
+  --warna-tautan: #FF8A8A;
+  --warna-latar: #121A24;
+  --warna-teks: #f1f1f1;
+  --warna-kartu: #1C2836;
+  --warna-garis: #34465A;
+  
 }

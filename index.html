@@ -8,28 +8,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
   <header>
     <div class="container navbar">
       <h1>Arya Wahyu Dwi Prasetyo</h1>
-      <nav class="menu-laptop">
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="proyek.html">Proyek</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
-        </ul>
-      </nav>
-      <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
-      <details class="menu-ponsel">
-        <summary>Menu</summary>
-        <nav>
+        <nav class="menu-laptop">
           <ul>
             <li><a href="index.html">Beranda</a></li>
             <li><a href="proyek.html">Proyek</a></li>
             <li><a href="kontak.html">Kontak</a></li>
           </ul>
         </nav>
+        <button type="button" id="tombol-tema" class="tombol-tema">Mode Gelap</button>
+        <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
+      <details class="menu-ponsel">
+        <summary>Menu</summary>
+          <nav>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="proyek.html">Proyek</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+          </nav>
+        <button type="button" id="tombol-tema" class="tombol-tema">Mode Gelap</button>
       </details>
     </div>
   </header>
@@ -71,11 +74,8 @@
 
         <section class="kartu">
           <h2>Keahlian</h2>
-          <ul>
-            <li>HTML dasar (sedang dipelajari)</li>
-            <li>Mengerjakan tugas dengan baik</li>
-            <li>Desain poster dengan Canva</li>
-          </ul>
+          <ul id="daftar-skill"></ul>
+          <p id="jumlah-skill"></p>
         </section>
       </div>
 
