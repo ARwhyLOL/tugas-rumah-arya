@@ -473,3 +473,14 @@ body.gelap .tombol-filter.aktif {
     background-color: #f20000;
     color: #f8f6f6;
 }
+.tombol-kecil {
+  background-color: #ed3347;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}

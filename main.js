@@ -249,3 +249,14 @@ async function ambilRepo() {
         console.error(error);
     }
 }
+const tombolkecil =document.querySelector('#daftar-repo');
+const tombolkecil =document.querySelector('#status-repo');
+
+tombolkecil.addEventListener('click', function() {
+    statusRepo.classList.toggle.apply('Sembunyikan Repositori')
+    if (statusRepo.classList.contains('Tampilkan Repositori')) {
+        tombolkecil.textContent = 'Sembunyikan Repositori';
+    } else {
+        tombolkecil.textContent = 'Tampilkan Repositori';
+    }
+});
