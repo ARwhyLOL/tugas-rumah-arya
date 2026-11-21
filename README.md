@@ -5,6 +5,7 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 ![Tampilan beranda portofolio](img/Capture.PNG)
 ![Tampilan Jadwal portofolio](img/jadwal.PNG)
 ![Tampilan Kontak portofolio](img/kontak.PNG)
+![Tampilan](img/Skor proyek html versi mobile.PNG)
 ## Fitur
 - Halaman **Beranda** berisi profil, hobi, cita-cita, keahlian, dan jadwal belajar
 - Halaman **Proyek** berisi daftar proyek dalam bentuk kartu
