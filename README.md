@@ -15,6 +15,5 @@ Website ini tampil rapi di ponsel, tablet, dan laptop.
 - CSS3 (Flexbox dan media query)
 - Git dan GitHub
 ## Tautan
-- Website: menyusul setelah *deploy* ke Vercel
-<<<<<<< HEAD
+- Website: https://tugas-rumah-arya.vercel.app
 - Dibuat oleh: Arya Wahyu Dwi Prasetyo, SMKS Brantas Karangkates
