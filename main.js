@@ -249,14 +249,15 @@ async function ambilRepo() {
         console.error(error);
     }
 }
-const tombolkecil =document.querySelector('#daftar-repo');
-const tombolkecil =document.querySelector('#status-repo');
 
-tombolkecil.addEventListener('click', function() {
-    statusRepo.classList.toggle.apply('Sembunyikan Repositori')
-    if (statusRepo.classList.contains('Tampilkan Repositori')) {
-        tombolkecil.textContent = 'Sembunyikan Repositori';
-    } else {
-        tombolkecil.textContent = 'Tampilkan Repositori';
-    }
+const tombolRepo = document.querySelector("#tombol-repo");
+
+tombolRepo.addEventListener("click", () => {
+  const tersembunyi = daftarRepo.style.display === "none";
+
+  daftarRepo.style.display = tersembunyi ? "" : "none";
+  statusRepo.style.display = tersembunyi ? "" : "none";
+  tombolRepo.textContent = tersembunyi
+    ? "Sembunyikan Repositori"
+    : "Munculkan Repositori";
 });

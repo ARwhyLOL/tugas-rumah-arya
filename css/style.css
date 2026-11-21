@@ -448,30 +448,30 @@ input, select, textarea {
 
 /* Tombol filter proyek */
 .tombol-filter {
-    padding: 10px 20px;
-    border: 2px solid #1d3557;
-    border-radius: 6px;
-    background-color: transparent;
-    color: #1d3557;
-    cursor: pointer;
-    transition: 0.3s;
+  padding: 10px 20px;
+  border: 2px solid #1d3557;
+  border-radius: 6px;    
+  background-color: transparent;
+  color: #1d3557;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 /* Tombol filter yang sedang aktif */
 .tombol-filter.aktif {
-    background-color: #fe0707;
-    color: white;
+  background-color: #fe0707;
+  color: white;
 }
 
 /* Tampilan tombol aktif pada tema gelap */
 body.gelap .tombol-filter {
-    border-color: #90CAF9;
-    color: #90CAF9;
+  border-color: #90CAF9;
+  color: #90CAF9;
 }
 
 body.gelap .tombol-filter.aktif {
-    background-color: #f20000;
-    color: #f8f6f6;
+  background-color: #f20000;
+  color: #f8f6f6;
 }
 .tombol-kecil {
   background-color: #ed3347;
@@ -483,4 +483,7 @@ body.gelap .tombol-filter.aktif {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+}
+.tersembunyi {
+  display: none; 
 }
